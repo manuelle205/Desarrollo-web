@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #F0F2F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Estilos del Encabezado */
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header h1 {
+    color: #ffff;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+header p {
+    color: #ffff;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+/* Container main */
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    background-color: #ffff;
+    width: 90%;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    gap: 30px;
+}
+
+/* Sección de arriba  */
+.arriba {
+    display: flex;
+    flex-direction: column;
+    background-color: #e67e22;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.arriba h2 {
+    color: #ffff;
+    margin-top: 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.arriba p {
+    color: #ffff;
+    font-size: 15px;
+}
+
+/* Sección de abajo de la cajas  */
+.abajo {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+/* Estilos de cada una de las cajas de forma separada. */
+.uno, .dos, .tres {
+    background-color: #d35400;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 280px; /* crecer/ encoger / ancho */
+    max-width: 350px;
+    height: auto;
+}
+
+.uno h2, .dos h2, .tres h2 {
+    color: #ffff;
+    margin-top: 0;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.uno p, .dos p, .tres p {
+    color: #ffff;
+    font-size: 13px;
+}
