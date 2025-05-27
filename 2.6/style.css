@@ -17,10 +17,10 @@ body {
 header {
     background-color: #34495e;
     color: white;
+    display: flex;
     padding: 30px 20px;
     text-align: center;
     width: 100%;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -56,10 +56,10 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #e67e22;
+    text-align: center;
     border-radius: 8px;
     justify-content: center;
     align-items: center;
-    text-align: center;
     padding: 40px;
     margin-bottom: 20px;
 }
@@ -79,9 +79,9 @@ main {
 /* Sección de abajo de la cajas  */
 .abajo {
     display: flex;
+    align-items: flex-start;
     background-color: transparent;
     justify-content: center;
-    align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap; 
 }
