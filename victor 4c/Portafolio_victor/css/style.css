@@ -1,0 +1,118 @@
+/* ===== Estilos generales ===== */
+body {
+    background-color: #0a0a0a;
+    color: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* ===== Hero Section ===== */
+.hero-section {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.5);
+}
+
+.hero-section .container {
+    z-index: 1; 
+    position: relative;
+    text-align: center;
+}
+
+.perfil-foto {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #00aaff;
+    transition: transform 0.3s ease;
+}
+.perfil-foto:hover {
+    transform: scale(1.1);
+}
+
+/* ===== Secciones ===== */
+.section {
+    padding: 80px 0;
+}
+
+/* ===== Cards generales ===== */
+.card {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+}
+.card:hover {
+    transform: scale(1.05);
+    background-color: #0f1a2b;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* ===== Portafolio: tarjetas del mismo tamaño ===== */
+#portfolio .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    min-height: 350px;
+}
+
+#portfolio .card img {
+    max-height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+#portfolio p {
+    color: #f8f9fa;
+    font-size: 0.95rem;
+    flex-grow: 1;
+}
+
+/* ===== Navbar ===== */
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #00aaff;
+    border-bottom: 2px solid #00aaff;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #00aaff;
+}
+
+/* ===== Footer ===== */
+footer {
+    font-size: 0.9rem;
+}
+
+/* ===== Responsividad ===== */
+@media (max-width: 768px) {
+    .perfil-foto {
+        width: 120px;
+        height: 120px;
+    }
+    .section {
+        padding: 60px 0;
+    }
+    #portfolio .card {
+        min-height: 300px;
+    }
+    #portfolio .card img {
+        max-height: 150px;
+    }
+}
